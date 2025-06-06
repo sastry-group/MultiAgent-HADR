@@ -4,7 +4,7 @@ This is a public website for the Human-Aware Multi-Robot Coordination for Humani
 
 🚁 Simulating how autonomous drones and other robotic systems to assist panicked humans during disasters and emergency situations. We use wildfires as a case study and pursuit-evasion games and partial observability models.
 
-View the site at: https://sastry-group.github.io/MultiRobot-HADR/
+View the site at: https://sastry-group.github.io/MultiAgent-HADR/
 
 ## Acknowledgments
 Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
