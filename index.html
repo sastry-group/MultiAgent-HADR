@@ -2,402 +2,304 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta name="description" content="Coordinated Autonomous Drones for Human-Centered Fire Evacuation in Partially Observable Urban Environments">
+  <meta property="og:title" content="Coordinated UAVs for Fire Evacuation"/>
+  <meta property="og:description" content="Multi-agent UAV coordination for human-centered fire evacuation under partial observability."/>
+  <meta property="og:url" content="https://sastry-group.github.io/MultiRobot-HADR/"/>
+  <meta property="og:image" content="static/image/fire-banner.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:title" content="Coordinated UAVs for Fire Evacuation">
+  <meta name="twitter:description" content="Multi-agent UAV coordination for human-centered fire evacuation under partial observability.">
+  <meta name="twitter:image" content="static/images/fire-banner.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="UAVs, Fire Evacuation, Multi-agent Systems, Reinforcement Learning, POMDP">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <title>Coordinated Autonomous Drones for
-    Human-Centered Fire Evacuation in Partially
-    Observable Urban Environments</title>
+  <title>Coordinated UAVs for Fire Evacuation</title>
   <link rel="icon" type="image/x-icon" href="static/images/fire.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+  <style>
+    .publication-authors {
+      font-size: 1.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 2rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+    .author-block {
+      display: inline-block;
+      text-align: center;
+      margin-bottom: 0.75rem;
+      line-height: 1.5;
+    }
+    .section ul {
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+    .about-centered {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto;
+    }
+    .image-horizontal {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 <body>
-
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Coordinated Autonomous Drones for
-              Human-Centered Fire Evacuation in Partially
-              Observable Urban Environments</h1>
+            <h1 class="title is-1 publication-title">Coordinated Autonomous Drones for Human-Centered Fire Evacuation in Partially Observable Urban Environments</h1>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://www.linkedin.com/in/maria-gabriela-mendoza/" target="_blank">Gaby Mendoza</a>,</span>
-              <span class="author-block">
-                <a href="https://www.linkedin.com/in/addikala" target="_blank">Addison Kalanther</a>,</span>
-                <span class="author-block">
-                  <a href="https://www.linkedin.com/in/danielbostwick" target="_blank">Daniel Bostwick</a>,</span>
-                  <span class="author-block">
-                    <a href="https://www.linkedin.com/in/emma-stephan/" target="_blank">Emma Stephan</a>,</span>
-                  <span class="author-block">
-                    <a href="https://sites.google.com/berkeley.edu/chinmay-maheshwari/home?authuser=0" target="_blank">Chinmay Maheshwari</a>,</span>
-                    <span class="author-block">
-                      <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/sastry.html" target="_blank">Shankar Sastry</a>
-                    </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <!-- <span class="author-block">University of California, Berkeley<br>NeurIps 2025</span> -->
-                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
-                  </div>
-<!--
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+              <span class="author-block"><a href="https://www.linkedin.com/in/maria-gabriela-mendoza/">Maria G. Mendoza</a><br>UC Berkeley, Mechanical Engineering</span>
+              <span class="author-block"><a href="https://www.linkedin.com/in/addikala">Addison Kalanther</a><br>UC Berkeley, EECS</span>
+              <span class="author-block"><a href="https://www.linkedin.com/in/danielbostwick">Daniel Bostwick</a><br>UC Berkeley, EECS</span>
+              <span class="author-block"><a href="https://www.linkedin.com/in/emma-stephan/">Emma Stephan</a><br>UC Berkeley, EECS</span>
+              <span class="author-block"><a href="https://sites.google.com/berkeley.edu/chinmay-maheshwari/home">Chinmay Maheshwari</a><br>UC Berkeley, EECS</span>
+              <span class="author-block"><a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/sastry.html">Shankar Sastry</a><br>UC Berkeley, EECS</span>
+            </div>
+            <div class="publication-links">
+              <a href="static/pdfs/HADR_IEEE_GHTC25.pdf" class="button is-rounded is-dark">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
+              </a>
+              <a href="https://github.com/sastry-group/hadr-games" class="button is-rounded is-dark">
+                <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+              </a>
+              <a href="static/slides/presentation.pdf" class="button is-rounded is-dark">
+                <span class="icon"><i class="fas fa-chalkboard-teacher"></i></span><span>Slides</span>
+              </a>
+              <a href="https://youtube.com/embed/YOUR_VIDEO_ID" class="button is-rounded is-dark">
+                <span class="icon"><i class="fas fa-video"></i></span><span>Video</span>
+              </a>
+              <a href="static/posters/poster.pdf" class="button is-rounded is-dark">
+                <span class="icon"><i class="fas fa-image"></i></span><span>Poster</span>
+              </a>
             </div>
           </div>
-        -->
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/scene.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-            Here we have the evacuee visually panicking in the bottome right corner with the fire spreading closer to them. 
-            The high-level rescuer sees the evacuee first and tracks it, sending this information to the low-level rescuer which then
-            quickly makes its way to the evacuee, ensuring it doesn't get to close to the fire and leading it to safety.
-      </h2>
+  </section>
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-vcentered">
+        <div class="column is-half">
+          <h2 class="title is-1">Sections</h2>
+          <ul>
+            <li><a href="#about">1. About</a></li>
+            <li><a href="#problem">2. Introduction</a></li>
+            <li><a href="#formulation">3. Problem Formulation</a></li>
+            <li><a href="#approach">4. Approach</a></li>
+            <li><a href="#analysis">5. Analysis</a></li>
+            <!-- <li><a href="#conclusion">6. Conclusion</a></li> -->
+          </ul>
+        </div>
+        <div class="column is-half">
+          <figure class="image is-4by3">
+            <img src="static/images/intro.png" alt="Problem Illustration">
+            <figcaption class="has-text-centered">Illustration of fire evacuation scenario with UAVs</figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
-<!-- End teaser video -->
+  </section>
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
+  <section id="about">
+    <div class="container is-max-desktop and about-centered">
+      
+      <h2 class="title is-2">About</h2>
+      <p>
+Autonomous drone technology holds significant
+promise for enhancing search and rescue operations during
+evacuations by guiding humans toward safety and supporting
+broader emergency response efforts. However, their application
+in dynamic, real-time evacuation support remains limited.
+Existing models often overlook the psychological and emotional
+complexity of human behavior under extreme stress. In real-
+world fire scenarios, evacuees frequently deviate from designated safe routes due to panic and uncertainty.
+      </p>
+    </p>
+To address these challenges, this paper presents a multi-agent coordination 
+framework in which autonomous Unmanned Aerial Vehicles (UAVs) assist human evacuees in real-time by locating, 
+intercepting, and guiding them to safety under uncertain conditions. We model the problem as a Partially Observable Markov Decision Process (POMDP), 
+where two heterogeneous UAV agents—a high-level rescuer (HLR) and a low-level rescuer (LLR)—coordinate through shared observations and complementary 
+capabilities. Human behavior is
+captured using an agent-based model grounded in empirical
+psychology, where panic dynamically affects decision-making
+and movement in response to environmental stimuli.
+The environment features stochastic fire spread, unknown
+evacuee locations, and limited visibility, requiring UAVs to
+plan over long horizons to search for a human and adapt
+in real time. 
+  </p>
+    <p>
+Our framework employs the Proximal Policy Optimization (PPO) algorithm with recurrent policies to enable
+robust decision-making in partially observable settings. Simulation results demonstrate that the UAV team can rapidly locate
+and intercept evacuees, significantly reducing the time required for them to reach safety compared to scenarios without UAV
+assistance.
+      </p>
+    </div>
+  </section>
+  <br></br>
+  <section id="problem">
+    <div class="container is-max-desktop">
+
+
+          <h2 class="title is-2">Problem</h2>
           <p>
-            Autonomous drone technology holds significant
-            promise for enhancing search and rescue operations during
-            evacuations by guiding humans toward safety and supporting
-            broader emergency response efforts. However, their application
-            in dynamic, real-time evacuation support remains limited.
-            Existing models often overlook the psychological and emotional
-            complexity of human behavior under extreme stress. In real-
-            world fire scenarios, evacuees frequently deviate from desig-
-            nated safe routes due to panic and uncertainty.
-            To address these challenges, this paper presents a multi-agent
-            coordination framework in which autonomous Unmanned
-            Aerial Vehicles (UAVs) assist human evacuees in real-time
-            by locating, intercepting, and guiding them to safety under
-            uncertain conditions. We model the problem as a Partially
-            Observable Markov Decision Process (POMDP), where two
-            heterogeneous UAV agents—a high-level rescuer (HLR) and
-            a low-level rescuer (LLR)—coordinate through shared obser-
-            vations and complementary capabilities. Human behavior is
-            captured using an agent-based model grounded in empirical
-            psychology, where panic dynamically affects decision-making
-            and movement in response to environmental stimuli.
-            The environment features stochastic fire spread, unknown
-            evacuee locations, and limited visibility, requiring UAVs to
-            plan over long horizons to search for a human and adapt
-            in real time. Our framework employs the Proximal Policy
-            Optimization (PPO) algorithm with recurrent policies to enable
-            robust decision-making in partially observable settings. Simu-
-            lation results demonstrate that the UAV team can rapidly locate
-            and intercept evacuees, significantly reducing the time required
-            for them to reach safety compared to scenarios without UAV
-            assistance.
+            Wildfires increasingly threaten urban populations, where dense infrastructure and limited escape routes make timely evacuation critical.
+            Yet, current evacuation systems largely overlook the human side of the problem—how panic, confusion, and poor visibility impair people's
+            ability to reach safe zones. While UAVs are already used for post-disaster mapping and monitoring, they are rarely deployed in real-time
+            to actively assist evacuees. Existing models often assume rational human behavior and full observability, ignoring the psychological complexity
+            of disaster scenarios. This work addresses that gap by designing a coordinated team of drones that can locate, intercept, and guide evacuees
+            to safety—despite unknown human locations, evolving fire hazards, and panic-induced behavior.
           </p>
-        </div>
-      </div>
+
+    </div>
+  </section>
+
+<section id="challenges" class="section">
+    <div class="container is-max-desktop">
+    <h2 class="title is-2">Challenges</h2>
+    <div class="content has-text-justified">
+      <p>
+        This problem presents several key challenges that must be overcome for UAVs to effectively assist during fire evacuations:
+      </p>
+      <ul>
+        <li><strong>C1 – Human Behavior under Panic:</strong> Evacuees often act irrationally under stress, deviating from safe routes due to fear, limited information, or emotional overwhelm.</li>
+        <li><strong>C2 – Long-Term Planning under Uncertainty:</strong> UAVs must make decisions without full knowledge of the environment or evacuee location, requiring planning over long horizons.</li>
+        <li><strong>C3 – Time-Varying Environment:</strong> Fires evolve stochastically and unpredictably, affecting both human and UAV actions in real time.</li>
+        <li><strong>C4 – Multi-Agent Coordination:</strong> The two UAVs must share partial observations and coordinate to successfully locate and intercept the evacuee.</li>
+        <li><strong>C5 – Heterogeneous Agent Capabilities:</strong> The high-level and low-level drones have different sensing, movement, and interception capabilities, complicating joint policy learning.</li>
+        <li><strong>C6 – Unknown Evacuee Location:</strong> The rescuers must search for the evacuee from scratch without prior location information, while avoiding wasted effort or missed opportunities.</li>
+      </ul>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img class="carousel-image" src="static/images/Urban_envDiagram.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Training environment in Minigrid.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img class="carousel-image" src="static/images/Urban_envDiagram.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Training environment in Minigrid.
-        </h2>
-      </div> 
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container"> -->
-      <!-- Paper video. -->
-      <!-- <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video"> -->
-            <!-- Youtube embed code here -->
-            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-          <!-- </div>
-        </div>
-      </div>
+<section id="approach" class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-2">Approach</h2>
+    <div class="content has-text-justified">
+      <p>
+        Our approach involves a coordinated team of two UAVs trained to assist in fire evacuation scenarios. The
+        <strong>High-Level Rescuer (HLR)</strong> provides aerial situational awareness and estimates the human’s location,
+        while the <strong>Low-Level Rescuer (LLR)</strong> navigates on the ground to intercept and guide the evacuee to safety.
+      </p>
+      <p>
+        The human agent is modeled using an agent-based simulation where panic influences movement. The entire system is modeled
+        as a <strong>Partially Observable Markov Decision Process (POMDP)</strong>. The UAVs are trained with
+        <strong>Proximal Policy Optimization (PPO)</strong> and recurrent (LSTM) policies, enabling memory-driven planning
+        in a dynamic and uncertain environment.
+      </p>
+      <p>
+        The reward function promotes coordination, visibility, proximity to the evacuee, and timely interception. It is shared
+        between both agents to encourage joint decision-making under uncertainty.
+      </p>
+    </div>
+    <div class="content">
+      <figure class="image image-enlarged">
+        <img src="static/images/Urban_envDiagram.png" alt="Environment diagram">
+        <figcaption class="has-text-centered">Simulation environment with fire, evacuee, and UAVs</figcaption>
+      </figure>
+      <figure class="image image-enlarged">
+        <img src="static/images/accesibilityCode.png" alt="Obstacle Types Diagram">
+        <figcaption class="has-text-centered">Static obstacle categories affecting UAV observability and movement</figcaption>
+      </figure>
     </div>
   </div>
-</section> -->
-<!-- End youtube video -->
+</section>
+<section id="analysis" class="section">
+    <div class="container is-max-desktop">
+    <h2 class="title is-2">Analysis</h2>
+    <div class="content has-text-justified">
+      <p>
+        We investigate three core questions in our simulations:
+      </p>
+      <ul>
+        <li><strong>Q1:</strong> Does UAV support improve evacuation time?</li>
+        <li><strong>Q2:</strong> Can reinforcement learning train an effective UAV coordination policy?</li>
+        <li><strong>Q3:</strong> How robust is the learned policy to changes in evacuee and fire locations?</li>
+      </ul>
+      <p>
+        We designed four test environments (Env-I to Env-IV) with increasing randomness in evacuee and fire placement. 
+        Evaluation metrics include <em>capture rate</em>, <em>time to capture</em>, <em>first seen time</em>, and 
+        <em>percent time in UAV field of view (FOV)</em>.
+      </p>
+    </div>
+  </div>
+</section>
 
+<section id="results" class="section">
+    <div class="container is-max-desktop ">
+    <h2 class="title is-2">Results</h2>
+    <div class="content has-text-justified">
+      <p>
+        Our experiments show that UAV support significantly improves fire evacuation outcomes, particularly when evacuees 
+        exhibit panic behavior. The trained policy remains robust across diverse environments.
+      </p>
+      <ul>
+        <li>Up to <strong>70% improvement</strong> in evacuation time compared to panic-only baseline.</li>
+        <li>Rescue rate remained above <strong>66%</strong> even in highly randomized environments.</li>
+        <li>Policy generalizes well to unseen fire/evacuee placements.</li>
+      </ul>
+    </div>
 
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Grid Environment</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <!-- Video 1 -->
-        <div class="item item-video1">
-          <figure class="has-text-centered">
-            <div class="has-text-centered"></div>
-            <video class="video-small" id="video1" autoplay controls muted loop>
-              <!-- Your video file here -->
-              <source src="static/videos/l0_pursuer_l0e.mp4"
-              type="video/mp4">
-            </video>
-          <h2 class="subtitle has-text-centered">Level 0 Pursuer Team vs Level 0 Evader</h2>
+    <div class="columns is-multiline">
+      <div class="column is-half">
+        <figure class="image">
+          <img src="static/images/performance_summ.png" alt="Policy performance summary">
+          <figcaption class="has-text-centered">Policy performance summary across four environments</figcaption>
         </figure>
-        </div>
-        <!-- Video 2 -->
-        <div class="item item-video2">
-          <figure class="has-text-centered">
-            <div class="has-text-centered"></div>
-            <video class="video-small" id="video2" autoplay controls muted loop>
-              <!-- Your video file here -->
-              <source src="static/videos/l1_evader_l0p.mp4"
-              type="video/mp4">
-            </video>
-            <h2 class="subtitle has-text-centered">Level 0 Pursuer Team vs Level 1 Evader</h2>
+      </div>
+      <div class="column is-half">
+        <figure class="image">
+          <img src="static/images/UAVEffect.png" alt="Evacuee trajectories under panic">
+          <figcaption class="has-text-centered">Evacuee trajectories with and without UAV intervention</figcaption>
         </figure>
-        </div>
-        <!-- Video 3 -->
-        <div class="item item-video3">
-          <figure class="has-text-centered">
-            <div class="has-text-centered"></div>
-            <video class="video-small" id="video3" autoplay controls muted loop> 
-              <!-- Your video file here -->
-              <source src="static/videos/l1_pursuer_l1e.mp4"
-              type="video/mp4">
-            </video>
-            <h2 class="subtitle has-text-centered">Level 1 Pursuer Team vs Level 1 Evader</h2>
-          </figure>
-        </div>
-        <!-- Video 4 -->
-        <div class="item item-video4">
-          <figure class="has-text-centered">
-            <div class="has-text-centered"></div>
-            <video class="video-small" id="video4" autoplay controls muted loop> 
-              <!-- Your video file here -->
-              <source src="static/videos/l1_pursuer_l0e.mp4"
-              type="video/mp4">
-            </video>
-            <h2 class="subtitle has-text-centered">Level 1 Pursuer Team vs Level 0 Evader</h2>
-          </figure>
-        </div>
+      </div>
+      <div class="column is-half">
+        <figure class="image">
+          <img src="static/images/dual_captureRadius_withError.png" alt="Impact of capture radius">
+          <figcaption class="has-text-centered">Impact of capture radius on success rate and evacuation improvement</figcaption>
+        </figure>
+      </div>
+      <div class="column is-half">
+        <figure class="image">
+          <img src="static/images/40od_5r.png" alt="Evacuation duration under different panic levels">
+          <figcaption class="has-text-centered">Evacuation duration under varying panic levels</figcaption>
+        </figure>
       </div>
     </div>
   </div>
 </section>
-
-
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Results</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img class="carousel-image" src="static/images/performance_summ.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Policy performance summary.
-        </h2>
-      </div>
-       <div class="item"> 
-        <!-- Your image here -->
-        <img src="static/images/Figure2_EvacueeTraje.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Number of steps taken by the evacuee to reach the safe zone under
-          varying panic levels.
-        </h2>
-      </div> 
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/40od_5r.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Number of steps taken by the evacuee to reach the safe zone under
-          varying panic levels.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/dual_captureRadius_withError.png" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Impact of capture radius r on evacuation outcomes. The left axis
-        shows the percentage of evacuees successfully intercepted by UAV rescuers.
-        The right axis shows the average percent improvement in capture time
-        relative to the panic-only baseline.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-
-
-
-<!-- Paper poster -->
-<!--<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section> -->
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <!--<section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section> -->
-<!--End BibTex citation -->
 
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a>, adapted from the <a href="https://nerfies.github.io">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the footer.<br>
+              This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+  </footer>
+</body>
+</html>
